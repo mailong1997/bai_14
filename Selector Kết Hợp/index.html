@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ví Dụ Về Selector</title>
+    <style>
+        /* Chọn mọi kết hợp của class 'active' trong thẻ div */
+        div.active > p {
+            color: green;
+        }
+
+        /* Chọn phần tử h1 mà có class 'title' */
+        h1.title {
+            text-align: center;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="title">Ví Dụ Về Selector</h1>
+
+    <div class="active">
+        <p>Đoạn văn này sẽ có màu xanh.</p>
+    </div>
+    
+    <div>
+        <p>Đoạn văn này sẽ không bị ảnh hưởng bởi CSS.</p>
+    </div>
+
+    <div class="active">
+        <p>Cũng sẽ có màu xanh.</p>
+    </div>
+
+    <div class="inactive">
+        <p>Đoạn văn này không có class active.</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ví Dụ Về Pseudo-elements</title>
+    <style>
+        /* Chọn dòng đầu tiên trong vòng nội dung của phần tử */
+        p::first-line {
+            font-style: italic; /* In nghiêng dòng đầu tiên */
+        }
+
+        /* Chọn ký tự đầu tiên trong phần tử */
+        h1::first-letter {
+            font-size: 2em; /* Kích thước ký tự đầu tiên */
+            color: red; /* Màu ký tự đầu tiên */
+        }
+    </style>
+</head>
+<body>
+    <h1>Chào Mừng Đến Với CSS!</h1>
+    <p>Đây là một đoạn văn mẫu. Nó chứa nhiều thông tin để minh họa cách sử dụng pseudo-elements trong CSS.</p>
+    
+    <p>Các pseudo-elements cung cấp cách để áp dụng kiểu cho phần tử mà không cần thay đổi cấu trúc HTML.</p>
+</body>
+</html>

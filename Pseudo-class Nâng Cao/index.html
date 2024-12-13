@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ví Dụ Về Pseudo-class</title>
+    <style>
+        /* Chọn mọi phần tử a trừ phần tử đầu tiên */
+        a:not(:first-child) {
+            color: gray;
+        }
+
+        /* Chọn phần tử thứ ba trong danh sách */
+        li:nth-child(3) {
+            font-weight: bold;
+        }
+
+        /* Chọn mọi phần tử lẻ trong danh sách */
+        li:nth-child(odd) {
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ví Dụ Về Pseudo-class</h1>
+
+    <h2>Danh sách liên kết</h2>
+    <ul>
+        <li><a href="#1">Liên kết 1</a></li>
+        <li><a href="#2">Liên kết 2</a></li>
+        <li><a href="#3">Liên kết 3</a></li>
+        <li><a href="#4">Liên kết 4</a></li>
+    </ul>
+
+    <h2>Danh sách không thứ tự</h2>
+    <ol>
+        <li>Phần tử 1</li>
+        <li>Phần tử 2</li>
+        <li>Phần tử 3</li>
+        <li>Phần tử 4</li>
+    </ol>
+</body>
+</html>
